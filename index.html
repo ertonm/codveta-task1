@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Responsive Landing</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header>
+        <div class="logo_container"><h1 class="logo_text">LOGO</h1></div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" aria-label="Primary Navigation">
+            <button class="close-menu" aria-label="Close menu">×</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+
+        <section id="home" class="hero" role="banner">
+            <div class="hero-inner">
+                <h1>Welcome to LANDING</h1>
+                <p>Your solution for modern web experiences.</p>
+                <a class="cta" href="#features">See features</a>
+            </div>
+        </section>
+
+        <section id="features" aria-labelledby="features-title">
+            <h2 id="features-title">Features</h2>
+            <div class="features">
+                <div class="feature" style="--delay: 0s;">
+                    <img src="https://placehold.co/450x200/ff9800/fff.png" alt="Feature 1">
+                    <article><h3>Fast</h3><p>Optimized for speed.</p></article>
+                </div>
+                <div class="feature" style="--delay: 0.2s;">
+                    <img src="https://placehold.co/450x200/ff9800/fff.png" alt="Feature 2">
+                    <article><h3>Responsive</h3><p>Looks great on any device.</p></article>
+                </div>
+                <div class="feature" style="--delay: 0.4s;">
+                    <img src="https://placehold.co/450x200/ff9800/fff.png" alt="Feature 3">
+                    <article><h3>Accessible</h3><p>Built with accessibility in mind.</p></article>
+                </div>
+            </div>
+          </section>          
+
+          <footer id="contact" role="contentinfo" class="site-footer">
+            <div class="footer-content">
+              <div class="footer-col">
+                <h3>About Us</h3>
+                <p>We build modern, responsive, and accessible web experiences for everyone.</p>
+              </div>
+              <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                  <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                  <li>Phone: +355 12 345 678</li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-bottom">
+              <p>&copy; <span id="year"></span> Erton Mara. All rights reserved.</p>
+            </div>         
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
