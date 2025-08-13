@@ -1,4 +1,4 @@
-// toggle mobile nav
+// Toggle mobile nav
 const menuToggle = document.querySelector('.menu-toggle');
 const closeMenu = document.querySelector('.close-menu');
 const nav = document.querySelector('nav');
@@ -17,10 +17,14 @@ menuToggle.addEventListener('click', () => {
 
 closeMenu.addEventListener('click', closeTheMenu);
 
-// set footer year
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', closeTheMenu);
+});
+
+// Set footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// simple reveal using IntersectionObserver
+// Simple reveal using IntersectionObserver
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) e.target.classList.add('visible');

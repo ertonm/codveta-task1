@@ -204,8 +204,8 @@ a:focus {
 }
 
 .site-footer {
-  background: var(--header-bg); /* dark gray background */
-  color: var(--header-text); /* white text */
+  background: var(--header-bg);
+  color: var(--header-text);
   padding-top: 2rem;
 }
 
@@ -243,7 +243,7 @@ a:focus {
 
 .footer-bottom {
   text-align: center;
-  background: rgba(255, 255, 255, 0.05); /* slightly lighter strip */
+  background: rgba(255, 255, 255, 0.05);
   padding: 0.25rem;
   margin-top: 1rem;
 }
